@@ -1,2 +1,32 @@
-# taxi_order_forecasting
-#time_series_analysis#catboost#lightgbm#pandas#matplotlib#seaborn#sklearn
+# Прогнозирование заказов таксти
+
+<div>
+  <img src="https://www.python.org/static/community_logos/python-logo.png" title="python" alt="python" width="120" height="40"/>&nbsp
+  <img src="https://pandas.pydata.org/static/img/pandas.svg" title="pandas" alt="pandas" width="120" height="40"/>&nbsp
+  <img src="https://seaborn.pydata.org/_images/logo-wide-lightbg.svg" title="seaborn" alt="seaborn" width="120" height="40"/>&nbsp
+  <img src="https://matplotlib.org/3.1.0/_images/sphx_glr_logos2_003.png" title="matplotlib" alt="matplotlib" width="120" height="40"/>&nbsp
+  <img src="https://github.com/scikit-learn/scikit-learn/blob/main/doc/logos/scikit-learn-logo-small.png" title="scikit-learn" alt="scikit-learn" width="120" height="40"/>&nbsp
+  <img src="https://github.com/catboost/catboost/blob/master/logo/catboost.png" title="catboost" alt="catboost" width="120" height="40"/>&nbsp
+  <img src="https://github.com/microsoft/LightGBM/blob/master/docs/logo/LightGBM_logo_black_text.svg" title="lightgbm" alt="lightgbm" width="120" height="40"/>&nbsp
+</div>
+
+**Описание проекта:**
+
+    Компания «Чётенькое такси» собрала исторические данные о заказах такси в аэропортах. Чтобы привлекать больше водителей в период пиковой нагрузки, нужно спрогнозировать количество заказов такси на следующий час. Постройте модель для такого предсказания. Значение метрики RMSE на тестовой выборке должно быть не больше 48.
+
+**План работы:**
+
+1. Загрузите данные и выполните их ресемплирование по одному часу.
+2. Проанализируйте данные.
+3. Обучите разные модели с различными гиперпараметрами. Сделайте тестовую выборку размером 10% от исходных данных.
+4. Проверьте модель на тестовой выборке и сделайте выводы.
+
+**Вывод:**
+
+В ходе работы были мы выгрузили данные и подготовили их к анализу. Подготовка включала в себя проверку непрерывности и дубликатов, выявление выбросов и соответвие содержимого заданию и типам данных. Кроме того было проведено ресемплирование данных по часам.
+
+Далее был проведен анализ времянных рядов. В анализ входило изучение распределение времянного ряда, определение роли трендов, сезонности и остатков для задачи. Также была проведена проверка стационарности ряда. В ходе анализа была выявлена нестационарность и сезонность в течении дня. На основе анализа временного ряда были созданы признаки для дальнейшего моделирования.
+
+В конечном счете было проведено обучение моделей с целью предсказания временного ряда с наибольшей точностью. В ходе обучения моделей перебирались различные комбинации гиперпараметров. Модель с лучшими гиперпараметрами была проверена на тестовой выборке и выдала высокие показатели по требованиям заказчика.
+
+
